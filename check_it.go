@@ -4,10 +4,7 @@
 // This code violates the first maintainability check `argument-count`
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import ("fmt"; "strings")
 
 
 func print_it(a string, b string, c string, d string, e string, f string, g string) {
@@ -15,9 +12,7 @@ func print_it(a string, b string, c string, d string, e string, f string, g stri
 }
 
 func main() {
-	msg := "Hej Code Climate, please check this code."
-    parts := strings.Split(msg, " ")
-    a, b, c, d, e := parts[0], parts[1], parts[2], parts[3], parts[4]
-    f, g := parts[5], parts[6]
+	parts := strings.Split("Hej Code Climate, please check this code.", " ")
+    a, b, c, d, e, f, g := parts[0], parts[1], parts[2], parts[3], parts[4], parts[5], parts[6]
     print_it(a, b, c, d, e, f, g)
 }
